@@ -1,0 +1,5 @@
+// Checks if the application is debuggable.
+public bool IsDebuggable()
+{
+    return ((Android.App.Application.Context.ApplicationContext.ApplicationInfo.Flags & ApplicationInfoFlags.Debuggable) != 0);
+}
