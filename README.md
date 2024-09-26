@@ -6,7 +6,7 @@ This project implements a comprehensive root detection mechanism for Android app
 
 - **Root Detection**: 
   - `IsJailBreaked()`: Checks for root binaries and management applications to determine if the device is rooted.
-  
+
 - **Emulator Detection**: 
   - `IsInEmulator()`: Identifies if the application is running on an emulator by examining the device's fingerprint.
 
@@ -20,6 +20,10 @@ This project implements a comprehensive root detection mechanism for Android app
 
 - **Magisk Detection**: 
   - `IsMagisk()`: Looks for the presence of Magisk by checking for the `libstub.so` library in native directories.
+
+- **Shamiko Module Detection**: 
+  - `IsShamikoModuleInstalled()`: Checks if the Shamiko module's directory exists on the device.
+  - `IsShamikoModuleActive()`: Reads the `module.prop` file to determine if the Shamiko module is enabled.
 
 - **File Path Management**: 
   - `GetFilePath(string filename)`: Returns the full file path for accessing files within the application's external storage directory.
